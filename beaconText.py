@@ -25,7 +25,7 @@ body= "Check your server! \n Hostname: " + hostname+
 
 msg.attach(MIMEText(body,'plain'))
 
-server = smtplib.SMTP('smtp.gmail.com', S87)
+server = smtplib.SMTP('smtp.gmail.com', 587)
 server.starttls()
 server.login(fromaddr, "<gmailPasswordHere>")
 text = msg.as_string()
